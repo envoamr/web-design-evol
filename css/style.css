@@ -1,0 +1,211 @@
+/* Main */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:focus,
+button:focus {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.fadeIn2 {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Intro */
+
+div#intro {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div#title span {
+  font-family: "Nunito Sans", "Courier New", Courier, monospace;
+  display: inline-block;
+  /* min-width: 45px;
+  font-size: 35px; */
+  min-width: 48px;
+  font-size: 33px;
+  padding: 10px 0;
+  color: black;
+}
+
+div#floating {
+  position: absolute;
+  max-width: 100%;
+  height: 10px;
+  z-index: -1;
+}
+
+div#floating span {
+  top: 200px;
+  animation: fadeIn ease 4s;
+}
+
+div#bye {
+  transform: translateY(200px);
+}
+
+div#bye p:nth-child(1) {
+  margin-bottom: 0;
+}
+
+div#bye p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+/* Showcase */
+
+div#showcase {
+  /* border-top: 2px solid blue; */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div#showcase div:nth-child(even) {
+  background-color: white;
+}
+
+div#showcase div.website:nth-child(odd) {
+  background-color: #e6e7ee;
+}
+
+div#showcase div.title,
+div#showcase div.website {
+  width: 100%;
+}
+
+/* Showcase title */
+
+div#showcase div.title {
+  text-align: center;
+  padding: 50px 2vw;
+}
+
+div#showcase div.title p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: black;
+}
+
+/* Showcase websites */
+
+div#showcase div#main {
+  width: 100%;
+}
+
+div#showcase div.website {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 100px 0;
+  justify-content: center;
+}
+
+div#showcase div.website > div {
+  width: 70%;
+}
+
+div#showcase div.website div.card-body div {
+  margin: 0 auto;
+  width: 50%;
+}
+
+div#showcase div.website > div,
+div#showcase div.website > div * {
+  background-color: #e6e7ee;
+}
+
+div#showcase div.website div.card img {
+  height: 400px;
+  object-fit: contain;
+}
+
+div#showcase div.website h3 {
+  text-align: left;
+  font-size: 40px;
+  color: black;
+}
+
+div#showcase div.website div.card-body p {
+  text-align: left;
+  font-size: 20px;
+}
+
+div#showcase div.website div.card-body > div:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div#showcase div.website div.card-body div.last-one {
+  display: flex;
+  justify-content: center;
+}
+
+div#showcase div.website div.card-body a {
+  margin: 10px auto;
+}
+
+div#showcase div.website div.card-body i {
+  color: #0056b3;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+div#showcase div.website a.carousel-control-prev,
+div#showcase div.website a.carousel-control-next {
+  background-color: transparent;
+}
+
+div#showcase div.website > div,
+div#showcase div.website > div * {
+  background-color: transparent;
+}
+
+/* Elevator button */
+
+div#go-up {
+  width: 100%;
+  height: 150px;
+  background-color: #222;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#go-up button {
+  height: fit-content;
+}
